@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   function showTime() {
-    const element = document.getElementById("currentTime");
-    if (!element) {
-      console.log("Element nije pronađen");
-      return;
-    }
+    const now = new Date();
+    const formatted = now.toLocaleTimeString("hr-HR", {
+      timeZone: "Europe/Zagreb",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+    });
 
-    element.textContent =
-      new Date().toLocaleString("hr-HR", { timeZone: "Europe/Zagreb" });
+    document.getElementById("currentTime").textContent = formatted;
   }
 
   showTime();
