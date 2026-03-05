@@ -6,3 +6,4 @@ radi?!
 
 radi na gitu vraćam na lokal
 
+html, css, js
