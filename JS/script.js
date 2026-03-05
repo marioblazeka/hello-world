@@ -15,4 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   showTime();
   setInterval(showTime, 1000);
 
+  console.log("radi", new Date());
+
 });
