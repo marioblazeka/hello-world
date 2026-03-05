@@ -1,7 +1,4 @@
-function updateTime() {
-  const now = new Date();
-  document.getElementById("currentTime").textContent = now.toLocaleString();
+function showTime() {
+	document.getElementById('currentTime').innerHTML =
+		new Date().toLocaleString("hr-HR", { timeZone: "Europe/Zagreb" });
 }
-
-updateTime();
-setInterval(updateTime, 1000);
