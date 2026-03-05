@@ -1,32 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Točno vrijeme</title>
+</head>
 <body>
 
-<p id="currentTime"></p>
+  <h1>Trenutno vrijeme</h1>
+  <p id="currentTime"></p>
 
-<script>
-  document.getElementById("currentTime").textContent =
-    new Date().toLocaleString();
-  updateTime();
-setInterval(updateTime, 1000);
-</script>
+  <script src="script.js"></script>
 
 </body>
 </html>
-
-/*<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-   <script>
-alert("JS radi");
-</script>
-    //   <script src="script.js"></script>
-  </body>
-</html>
-*/
