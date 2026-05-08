@@ -1,6 +1,55 @@
-body{
-  padding: 125px;
+/* Osnovne postavke i uklanjanje rubova [9] */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
-.title {
-	color: #9C6AC9;
+
+/* Responzivni kontejner [9] */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flexbox za navigaciju [8] */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    background: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Bočni "Back to Top" gumb [10] */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Skriven po defaultu */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Banner za kolačiće - fiksiran na dnu [10, 11] */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
